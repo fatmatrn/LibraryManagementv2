@@ -15,21 +15,6 @@ spring:
     password: db_password
     driver-class-name: org.postgresql.Driver
 
-
-  mail:
-    host: sandbox.smtp.mailtrap.io
-    port: 587
-    username: e47cb499889058
-    password: f3ac8f5751e322
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
-
-
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -74,6 +59,6 @@ info:
   application:
     name: 'Library Management System Application'
     description: 'Created Library Management System by Turan'
-    version: '@project.version@'
+    version: '0.0.1-SNAPSHOT'
 
 

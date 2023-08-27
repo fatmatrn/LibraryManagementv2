@@ -41,10 +41,10 @@ public class SecurityConfig {
                 antMatchers("/login",
                             "/register",
                             "/actuator/info",// beanlar hakkında bilgi veriyor
-                            "/actuator/health").permitAll().
+                            "/actuator/health",
+                              "/feedback").permitAll().
                 anyRequest().authenticated();
-            //AuthTokenFilter en aşağıda oluşturduk cunku build işlmi için bildirmrmemiz gerikir
-                // filter class dondurur yani  yani UsernamePasswordAuthenticationFilter onune kendi class entegre ediyoruz
+
 
                 http.addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
