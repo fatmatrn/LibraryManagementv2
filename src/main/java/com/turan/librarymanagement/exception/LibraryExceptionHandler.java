@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.List;
 import java.util.stream.Collectors;
 
-@ControllerAdvice
+//@ControllerAdvice
 public class LibraryExceptionHandler extends ResponseEntityExceptionHandler {
     Logger logger = LoggerFactory.getLogger(LibraryExceptionHandler.class);
     private ResponseEntity<Object> createResponseEntity(ApiResponseError error) {
